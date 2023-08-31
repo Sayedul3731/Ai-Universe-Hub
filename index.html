@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai Universe Hub</title>
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="mt-14">
+        <h1 class="text-center text-5xl">Ai universe hub</h1>
+        <div class="text-center mt-10">
+            <button class="btn btn-secondary">Sort By Date</button>
+        </div>
+    </header>
+    <main class="w-3/4 mx-auto">
+        <section>
+            <!-- technology container  -->
+            <div id="technology-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
+
+            </div>
+        </section>
+        <!-- modal section starts here  -->
+        <section>
+            <dialog id="show_technology_details" class="modal">
+                <form method="dialog" class="bg-white flex w-5/6 lg:w-2/5 p-10 rounded-lg relative">
+                    <div id="show-modal-desc" class="p-5 border mr-5 rounded-lg bg-[#eb57570d]">
+
+                    </div>
+                    <div id="show-modal-img-with-desc" class="border p-5">
+
+                    </div>
+                    <div id="close-btn" class="absolute -mt-20 md:ml-[720px] lg:ml-[700px]">
+
+                    </div>
+                </form>
+
+            </dialog>
+        </section>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
